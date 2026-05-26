@@ -1,0 +1,63 @@
+{
+  "name": "@appu2778/prisma-query-lens",
+  "version": "1.0.6",
+  "description": "Find all Prisma queries inside any function — including sub-functions — via a browser UI",
+  "main": "server.js",
+  "bin": {
+    "query-lens": "bin/start.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"cli/tests/*.test.js\"",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "files": [
+    "bin/",
+    "cli/",
+    "server.js",
+    "analyzer.js",
+    "index.html",
+    "README.md"
+  ],
+  "keywords": [
+    "prisma",
+    "query",
+    "analyzer",
+    "static-analysis",
+    "typescript",
+    "n+1",
+    "sql"
+  ],
+  "author": "appu2778",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepandeyaarpit/prisma-query-lens"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dagre": "0.8.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "reactflow": "11.11.4",
+    "ts-morph": "21.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.0.0",
+    "@testing-library/user-event": "14.5.2",
+    "@types/dagre": "0.7.52",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.1",
+    "fast-check": "3.22.0",
+    "jsdom": "^29.1.1",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vite-plugin-singlefile": "2.1.0",
+    "vitest": "2.1.8"
+  }
+}
